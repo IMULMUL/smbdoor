@@ -1,7 +1,6 @@
 # smbdoor
 
 ### I'm working on this to add compatibility for Windows 11.
-### coming soon
 
 ![ExtraPulsar](extrapulsar.png)
 
