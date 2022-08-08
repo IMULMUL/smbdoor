@@ -1,5 +1,11 @@
 # smbdoor
 
+### :green_circle: Fixed crash/shellcode not executing. see `callbacks.c` for more info.
+
+---
+
+#### "old" news below
+
 ### I'm working on this to add compatibility for Windows 11.
 
 - idk about this 
