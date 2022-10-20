@@ -1,15 +1,19 @@
 # smbdoor
-
 ### :green_circle: Fixed crash/shellcode not executing. see `callbacks.c` for more info.
 
 ---
 
-#### "old" news below
+#### "old"  below
 
-### I'm working on this to add compatibility for Windows 11.
+# :radioactive: finally Win11 soon done
+### `Windows 11 now works; but will need to do further testing`
 
-- idk about this 
+
+- idk a bit un-sure
 - https://github.com/fengjixuchui/smbdoor/pull/1/files
+
+
+
 
 ![ExtraPulsar](extrapulsar.png)
 
